@@ -1,22 +1,24 @@
-#include <stdio.h>
+#include "main.h"
+
 /**
- * main - main block
- * Description: Get a random number and check its last digit, compare it with 5
- * Return: 0
+ * _isalpha - Return 1 if c is a letter. lowercase or uppercase
+ *
+ *@c: The int to print
+ * Return: Always 0.
  */
-int main(void)
+
+int _isalpha(int c)
+
 {
-	char c = 'a';
 
-	while (c <= 'z')
-	{
-		if (c != 'e' && c != 'q')
-		{
-			putchar(c);
-		}
-		c++;
-	}
+if ((c > 'a' && c < 'z') || (c > 'A' && c < 'Z'))
+{
+return (1);
+}
 
-	putchar('\n');
-	return (0);
+else
+{
+return (0);
+}
+
 }
