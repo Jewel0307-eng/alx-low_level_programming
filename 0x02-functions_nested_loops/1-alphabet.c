@@ -1,26 +1,20 @@
-#include <stdio.h>
-#include <time.h>
-#include <stdlib.h>
+#include "main.h"
+
 /**
- * main - main block
- * Description: Get a random number and check its last digit, compare it with 5
- * Return: 0
+ * print_alphabet - prints the alphabets
+ *
+ * Return: Always 0.
  */
-int main(void)
+
+void print_alphabet(void)
 {
-	int n;
-	int last;
+	char alphabet = 'a';
 
-	srand(time(0));
-	n = rand() - RAND_MAX / 2;
-	last = n % 10;
+	while (alphabet <= 'z')
+	{
+		_putchar(alphabet);
+		alphabet++;
+	}
 
-	if (last > 5)
-		printf("Last digit of %i is %i and is greater than 5\n", n, last);
-	else if (last == 0)
-		printf("Last digit of %i is %i and is 0\n", n, last);
-	else if (last < 6)
-		printf("Last digit of %i is %i and is less than 6 and not 0\n", n, last);
-
-	return (0);
+	_putchar('\n');
 }
