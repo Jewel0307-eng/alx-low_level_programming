@@ -1,28 +1,22 @@
-#include <stdio.h>
+#include "main.h"
+
 /**
- * main - main block
- * Description:  prints the alphabet in lowercase,
- * and then in uppercase, followed by a new line.
- * Return: 0
+ * _islower - Short description, single line
+ * @c: contains value to be compared
+ * Return: Always 0.
  */
-int main(void)
+int _islower(int c)
+
 {
-	char c = 'a';
 
-	while (c <= 'z')
-	{
-		putchar(c);
-		c++;
-	}
+if (c > 'a' && c < 'z')
+{
+return (1);
+}
 
-	c = 'A';
+else
+{
+return (0);
+}
 
-	while (c <= 'Z')
-	{
-		putchar(c);
-		c++;
-	}
-
-	putchar('\n');
-	return (0);
 }
