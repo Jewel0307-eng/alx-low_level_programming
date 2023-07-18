@@ -1,20 +1,27 @@
-#include <stdio.h>
-#include <stdlib.h>
+#include "main.h"
+
 /**
- * main - main block
- * Description: Get a random number and check its last digit, compare it with 5
- * Return: 0
+ * print_alphabet_x10 - print alphabet
+ *
+ * Return: Always 0.
  */
-int main(void)
+void print_alphabet_x10(void)
 {
-	char c = 'a';
+int alphabet;
+int count;
 
-	while (c <= 'z')
-	{
-		putchar(c);
-		c++;
-	}
 
-	putchar('\n');
-	return (0);
+count = 0;
+while (count < 10)
+{
+for (alphabet = 'a' ; alphabet <= 'z'; alphabet++)
+{
+_putchar(alphabet);
+}
+
+count++;
+_putchar('\n');
+}
+
+
 }
