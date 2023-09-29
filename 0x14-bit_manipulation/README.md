@@ -1,1 +1,1 @@
-0x14. C - Bit manipulation Jewel Duah
+0x14. C - Bit manipulation by Jewel Duah
